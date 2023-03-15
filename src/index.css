@@ -17,13 +17,22 @@
 body {
   background-color: #0e1014;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: inline-block;
   overflow-x: hidden;
   color: var(--firstTextColor);
 }
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
 }

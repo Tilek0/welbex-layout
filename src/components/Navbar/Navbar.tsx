@@ -15,11 +15,11 @@ export const Navbar = () => {
           </span>
         </div>
         <div className="flex space-x-8">
-          <a>Услуги</a>
-          <a>Виджеты</a>
-          <a>Интеграции</a>
-          <a>Кейсы</a>
-          <a>Сертификаты</a>
+          <a href="/Service">Услуги</a>
+          <a href="/Widgets">Виджеты</a>
+          <a href="/Integrations">Интеграции</a>
+          <a href="/Cases">Кейсы</a>
+          <a href="/Certificates">Сертификаты</a>
         </div>
       </div>
       <div className="flex gap-x-12">

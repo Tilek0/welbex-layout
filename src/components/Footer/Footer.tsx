@@ -1,19 +1,22 @@
 import telegram from 'assets/telegram.svg';
 import viber from 'assets/viber.svg';
 import whatsapp from 'assets/whatsapp.svg';
+import { MyTitle } from 'UI/MyTitle';
 
 export const Footer = () => {
   return (
     <div className="flex justify-between w-full h-[20vh]">
       <div>
-        <h2 className="text-sm font-bold text-[var(--secondTextColor)] mb-4">
+        <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="4">
           О КОМПАНИИ
-        </h2>
+        </MyTitle>
         <p>Партнерская программа</p>
         <p>Вакансии</p>
       </div>
       <div className="-translate-x-20">
-        <h2 className="text-sm font-bold text-[var(--secondTextColor)] mb-4">МЕНЮ</h2>
+        <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="4">
+          МЕНЮ
+        </MyTitle>
         <div className="flex justify-between w-[25vw]">
           <div>
             <p>Расчёт стоимости</p>
@@ -32,7 +35,9 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-end flex flex-col gap-y-3">
-        <h2 className="text-sm font-bold text-[var(--secondTextColor)] mb-4">КОНТАКТЫ</h2>
+        <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="4">
+          КОНТАКТЫ
+        </MyTitle>
         <p>+7 555 555-55-55</p>
         <div className="flex gap-x-3 justify-end">
           <img src={telegram} alt="telegram" />
