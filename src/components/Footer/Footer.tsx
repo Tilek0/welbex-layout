@@ -1,6 +1,7 @@
 import telegram from 'assets/telegram.svg';
 import viber from 'assets/viber.svg';
 import whatsapp from 'assets/whatsapp.svg';
+import { MyIcon } from 'UI/MyIcon';
 import { MyTitle } from 'UI/MyTitle';
 
 export const Footer = () => {
@@ -8,7 +9,7 @@ export const Footer = () => {
     <div
       className="flex justify-between w-full min-h-[20vh] 
     max-xl:text-sm max-[868px]:grid max-[868px]:justify-center 
-    max-md:gap-y-4 max-md:bg-[#0e1014] max-md:pt-10 pb-3"
+    max-md:gap-y-4 max-md:bg-[#0e1014] max-md:pt-10 pb-10"
     >
       <div>
         <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="4">
@@ -44,9 +45,9 @@ export const Footer = () => {
         </MyTitle>
         <p>+7 555 555-55-55</p>
         <div className="flex gap-x-3 justify-end max-[868px]:justify-start">
-          <img src={telegram} alt="telegram" />
-          <img src={viber} alt="viber" />
-          <img src={whatsapp} alt="whatsapp" />
+          <MyIcon src={telegram} />
+          <MyIcon src={viber} />
+          <MyIcon src={whatsapp} />
         </div>
         <p>Москва, Путевой проезд 3с1, к 902</p>
         <p className="text-xs font-Montserrat mt-12">

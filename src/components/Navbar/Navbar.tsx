@@ -2,6 +2,7 @@ import logoWelbex from 'assets/logoWelbex.svg';
 import telegram from 'assets/telegram.svg';
 import viber from 'assets/viber.svg';
 import whatsapp from 'assets/whatsapp.svg';
+import { MyIcon } from 'UI/MyIcon';
 export const Navbar = () => {
   return (
     <header
@@ -31,9 +32,9 @@ export const Navbar = () => {
       <div className="flex gap-x-12">
         <p className="max-xl:hidden">+7 555 555-55-55</p>
         <div className="flex gap-x-7 items-start max-lg:hidden">
-          <img src={telegram} alt="telegram" />
-          <img src={viber} alt="viber" />
-          <img src={whatsapp} alt="whatsapp" />
+          <MyIcon src={telegram} />
+          <MyIcon src={viber} />
+          <MyIcon src={whatsapp} />
         </div>
       </div>
     </header>

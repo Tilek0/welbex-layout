@@ -2,6 +2,7 @@ import purpleBall from 'assets/purpleBall.svg';
 import redBall from 'assets/redBall.svg';
 import { MyBlurBallPurple } from 'UI/MyBlurBallPurple';
 import { MyBlurBallRed } from 'UI/MyBlurBallRed';
+import { MyImage } from 'UI/MyImage';
 
 import { ContentBox } from './ContentBox';
 import { MobileContentBox } from './MobileContentBox';
@@ -30,21 +31,9 @@ export const Content = () => {
       <MobileContentBox />
       <MyBlurBallRed />
       <MyBlurBallPurple />
-      <div className="absolute top-14 left-[31%] -z-10 max-md:hidden">
-        <img src={redBall} alt="ball" />
-      </div>
-      <div
-        className="absolute top-0 right-[42%] -z-10 
-      max-md:top-[25%] max-md:right-0 max-md:blur-sm"
-      >
-        <img src={purpleBall} alt="ball" />
-      </div>
-      <div
-        className="absolute top-[56%] right-[35%] -z-10 w-[28px] h-[28px] blur-[2px]
-      max-md:top-[43%] max-md:right-[73%] max-md:w-[70px] max-md:h-[70px] max-md:blur-sm"
-      >
-        <img src={redBall} alt="ball" />
-      </div>
+      <MyImage src={redBall} text="red" />
+      <MyImage src={purpleBall} text="purple" />
+      <MyImage src={redBall} text="redSmall" />
     </div>
   );
 };
