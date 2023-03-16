@@ -5,7 +5,11 @@ import { MyTitle } from 'UI/MyTitle';
 
 export const Footer = () => {
   return (
-    <div className="flex justify-between w-full h-[20vh]">
+    <div
+      className="flex justify-between w-full min-h-[20vh] 
+    max-xl:text-sm max-[868px]:grid max-[868px]:justify-center 
+    max-md:gap-y-4 max-md:bg-[#0e1014] max-md:pt-10 pb-3"
+    >
       <div>
         <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="4">
           О КОМПАНИИ
@@ -13,17 +17,17 @@ export const Footer = () => {
         <p>Партнерская программа</p>
         <p>Вакансии</p>
       </div>
-      <div className="-translate-x-20">
+      <div>
         <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="4">
           МЕНЮ
         </MyTitle>
-        <div className="flex justify-between w-[25vw]">
+        <div className="flex justify-between w-[25vw] gap-x-3 max-[840px]:gap-x-14">
           <div>
             <p>Расчёт стоимости</p>
             <p>Услуги</p>
             <p>Виджеты</p>
             <p>Интеграции</p>
-            <p>Наши клиенты</p>
+            <p className="whitespace-nowrap">Наши клиенты</p>
           </div>
           <div>
             <p>Кейсы</p>
@@ -34,12 +38,12 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-end flex flex-col gap-y-3">
-        <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="4">
+      <div className="text-end flex flex-col gap-y-3 max-[868px]:text-start text-base">
+        <MyTitle size="sm" font="bold" color="var(--secondTextColor)" margin="2">
           КОНТАКТЫ
         </MyTitle>
         <p>+7 555 555-55-55</p>
-        <div className="flex gap-x-3 justify-end">
+        <div className="flex gap-x-3 justify-end max-[868px]:justify-start">
           <img src={telegram} alt="telegram" />
           <img src={viber} alt="viber" />
           <img src={whatsapp} alt="whatsapp" />

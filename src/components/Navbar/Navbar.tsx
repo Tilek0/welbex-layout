@@ -4,9 +4,13 @@ import viber from 'assets/viber.svg';
 import whatsapp from 'assets/whatsapp.svg';
 export const Navbar = () => {
   return (
-    <header className="w-full h-[60px] mt-10 mx-auto flex justify-between pt-2">
+    <header
+      className="w-full h-[60px] max-md:pt-5 pt-10 mx-auto flex 
+    justify-between max-md:justify-center
+     max-md:bg-[#0e1014]"
+    >
       <div className="flex gap-x-12">
-        <div className="grid">
+        <div className="grid max-md:hidden">
           <div className="w-[140px] h-[24px]">
             <img src={logoWelbex} alt="welbexLogo" />
           </div>
@@ -14,17 +18,19 @@ export const Navbar = () => {
             крупный интегратор CRM <br /> в России и еще 8 странах
           </span>
         </div>
-        <div className="flex space-x-8">
+        <div className="flex space-x-8 max-lg:space-x-2">
           <a href="/Service">Услуги</a>
           <a href="/Widgets">Виджеты</a>
           <a href="/Integrations">Интеграции</a>
           <a href="/Cases">Кейсы</a>
-          <a href="/Certificates">Сертификаты</a>
+          <a href="/Certificates" className="max-sm:hidden">
+            Сертификаты
+          </a>
         </div>
       </div>
       <div className="flex gap-x-12">
-        <p className="text-right">+7 555 555-55-55</p>
-        <div className="flex gap-x-7 items-start">
+        <p className="max-xl:hidden">+7 555 555-55-55</p>
+        <div className="flex gap-x-7 items-start max-lg:hidden">
           <img src={telegram} alt="telegram" />
           <img src={viber} alt="viber" />
           <img src={whatsapp} alt="whatsapp" />
